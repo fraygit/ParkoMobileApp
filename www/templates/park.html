@@ -1,0 +1,40 @@
+﻿<style type="text/css">
+    .map-canvas {
+        height: 300px;
+        width: 100% margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+</style>
+
+
+
+<ion-view view-title="Parko">
+    <ion-content>
+        <ul class="list">
+            <li class="item">
+                <p>308 Hillsborough Road, Hillsborough, Auckland</p>
+            </li>
+            <li class="item">
+                <div class="map-canvas" id="parkSearchMap" data-tap-disabled="true"></div>
+                <i class="ion-chevron-down" data-pack="default" data-tags="arrow, down" id="btnMapCollapse" style="display:none;"></i>
+            </li>
+            <li class="item" id="parking-details" style="">
+                <div id="parking-desc"></div>
+                <div class="col text-center">
+                    <!--<button class="button button-positive ion-model-s icon-left">
+                        Confirm
+                    </button>
+                    <h2>Or</h2>-->
+
+                    <button class="button button-positive ion-model-s icon-left" id="btnConfirmNavigate">
+                        Confirm &amp; Navigate
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
